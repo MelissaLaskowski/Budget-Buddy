@@ -8,6 +8,8 @@ let changeColor = document.getElementById('changeColor');
 
 let changeBlue = document.getElementById('changeBlue');
 
+let test = document.getElementById('test');
+
 chrome.storage.sync.get('color', function(data) {
   changeColor.style.backgroundColor = data.color;
   changeColor.setAttribute('value', data.color);
