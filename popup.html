@@ -4,11 +4,13 @@
     <style>
       section {
         background: #d7f7e8;
-        font-size: 15px;
+        font-size: 20px;
         color: #1ba163;
         line-height: 24px;
         padding: 18px 65px;
         position: relative;
+        overflow: hidden;
+        white-space: nowrap;
       }
       button {
         height: 30px;
@@ -20,10 +22,16 @@
         width: 20px;
         font: fantasy;
       }
+      spending {
+        height: 200px;
+        width: 24px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <section id="test">Budget Buddy</section>
+    <section id="test">$   BUDGET BUDDY    $</section>
+    <spending id="spending">Clothing Budgets</spending>
     <button id="changeColor"></button>
     <button id="changeBlue"></button>
     <script src="popup.js"></script>

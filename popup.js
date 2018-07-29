@@ -10,6 +10,8 @@ let changeBlue = document.getElementById('changeBlue');
 
 let test = document.getElementById('test');
 
+let spending = document.getElementById('spending');
+
 chrome.storage.sync.get('color', function(data) {
   changeColor.style.backgroundColor = data.color;
   changeColor.setAttribute('value', data.color);
