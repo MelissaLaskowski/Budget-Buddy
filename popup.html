@@ -1,37 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      section {
-        background: #d7f7e8;
-        font-size: 20px;
-        color: #1ba163;
-        line-height: 24px;
-        padding: 18px 65px;
-        position: relative;
-        overflow: hidden;
-        white-space: nowrap;
-      }
-      button {
-        height: 30px;
-        width: 30px;
-        outline: none;
-      }
-      header {
-        height: 30px;
-        width: 20px;
-        font: fantasy;
-      }
-      spending {
-        height: 200px;
-        width: 24px;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <section id="test">$   BUDGET BUDDY    $</section>
-    <spending id="spending">Clothing Budgets</spending>
+    <u><header id="spending">Clothing Budget</header></u>
+    <dollar id="current_amt">$22.00</dollar>
+    <dollar id="transaction_amt">$10.00</dollar>
     <button id="changeColor"></button>
     <button id="changeBlue"></button>
     <script src="popup.js"></script>

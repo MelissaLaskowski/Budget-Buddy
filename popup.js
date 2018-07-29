@@ -12,6 +12,10 @@ let test = document.getElementById('test');
 
 let spending = document.getElementById('spending');
 
+let current_amt = document.getElementById('current_amt');
+
+let transaction_amt = document.getElementById('transaction_amt');
+
 chrome.storage.sync.get('color', function(data) {
   changeColor.style.backgroundColor = data.color;
   changeColor.setAttribute('value', data.color);
